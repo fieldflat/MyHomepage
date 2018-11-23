@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+  <meta charset="utf-8">
+  <title>Hirata's Homepage </title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- headeer -->
+  <header>
+    <div class="header-list">
+      <div class="header-icon">
+        <!-- <a href="index.html"><img src="./pic/me.png"></a> -->
+        <a href="/"><img src="/pic/me.png"></a>
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="https://github.com/fieldflat?tab=repositories" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/field_flat" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/field_flat7/?hl=ja" target="_blank">Instagram</a></li>
+        <li><a href="http://tomonori4565.hatenablog.com/" target="_blank">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- header end -->
+
+
+  <!-- middle-wrapper -->
+  <div class="index-middle-wrapper">
+
+    <h1>Answer the questions, and get the flag!</h1>
+
+    <div class="questions-area">
+      <ol>
+      <% @questions.each do |q| %>
+      <div class="question">
+        <li><%= link_to(q.title, "questions/#{q.id}/show", :style=>" color: #aaa; text-decoration: none;") %></li>
+      </div>
+      <% end %>
+      </ol>
+    </div>
+
+  </div>
+  <!-- middle-wrapper end -->
+
+  <!-- If you know about my birthday, please input "birthday". -->
+
+  <!-- footer -->
+  <footer>
+    <p>Copyright by Hirata(namdicul) </p>
+  </footer>
+  <!-- footer end -->
+
+</body>
+
+</html>

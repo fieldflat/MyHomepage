@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+  <meta charset="utf-8">
+  <title>Hirata's Homepage </title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- headeer -->
+  <header>
+    <div class="header-list">
+      <div class="header-icon">
+        <!-- <a href="index.html"><img src="./pic/me.png"></a> -->
+        <a href="/"><img src="/pic/me.png"></a>
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="https://github.com/fieldflat?tab=repositories" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/field_flat" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/field_flat7/?hl=ja" target="_blank">Instagram</a></li>
+        <li><a href="http://tomonori4565.hatenablog.com/" target="_blank">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- header end -->
+
+
+  <!-- middle-wrapper -->
+  <div class="middle-wrapper">
+
+    <!-- contents -->
+    <div class="contents">
+      <h1>Welcome to <%= link_to("Hirata", "/questions", :style=>"text-decoration: none; color: rgb(127, 218, 90);") %>'s Homepage!!</h1>
+    </div>
+    <!-- contents end -->
+
+    <!-- picture -->
+    <div class="my-picture">
+      <img src="./pic/me.png">
+    </div>
+
+    <div class="command-area">
+      <%= form_tag("/check") do %>
+      <input type="text" placeholder="Input the command." id="command" name="command" class="input">
+      <input type="submit" id="btn" class="submit">
+      <p><%= @command.result %></p>
+      <% end %>
+    </div>
+
+  </div>
+  <!-- middle-wrapper end -->
+
+  <!-- If you know about my birthday, please input "birthday". -->
+
+  <!-- footer -->
+  <footer>
+    <p>Copyright by Hirata(namdicul) </p>
+  </footer>
+  <!-- footer end -->
+
+</body>
+
+</html>

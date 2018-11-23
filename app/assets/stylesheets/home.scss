@@ -1,0 +1,213 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #261919;
+  font-family: sans-serif;
+  padding: 10px 30px;
+}
+
+header {
+  border-bottom: 1px solid grey;
+}
+
+.header-icon img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+.header-list {
+  /* border: 3px solid white; */
+}
+
+.header-list ul {
+  text-align: right;
+}
+
+.header-list li {
+  color: #aaa;
+  list-style: none;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.header-list a:hover {
+  text-decoration: none;
+  color: #aaa;
+  opacity: 0.7;
+}
+
+.middle-wrapper {
+  /* height: 400px; */
+  /* border: 3px solid white; */
+  text-align: center;
+  color: #aaa;
+  padding: 30px 0;
+}
+
+.introduction {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.middle-wrapper h2{
+  font-size: 36px;
+}
+
+.introduction span{
+  color: rgb(200, 58, 33);
+}
+
+.my-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.command-area {
+  padding-top: 100px;
+}
+
+.contents h1 {
+  color: rgb(127, 218, 90);
+}
+
+footer {
+  border-top: 1px solid grey;
+}
+
+footer p{
+  text-align: right;
+  color: #aaa;
+  opacity: 0.7;
+}
+
+
+//
+//
+/* スマートフォン用 */
+//
+//
+@media (max-width: 1000px){
+  body{
+    background-color: #261919;
+    font-family: sans-serif;
+    padding: 10px 30px;
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 20px 0px;
+    border-bottom: 1px solid grey;
+  }
+
+  .header-icon img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+  }
+
+  .header-list {
+    /* border: 3px solid white; */
+  }
+
+  .header-list ul {
+    text-align: right;
+  }
+
+  .header-list li {
+    color: #aaa;
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 35px;
+  }
+
+  .header-list a {
+    text-decoration: none;
+    color: #aaa;
+  }
+
+  .header-list a:hover {
+    text-decoration: none;
+    color: #aaa;
+    opacity: 0.7;
+  }
+
+  .middle-wrapper {
+    /* height: 400px; */
+    /* border: 3px solid white; */
+    text-align: center;
+    color: #aaa;
+    padding: 30px 0;
+  }
+
+  .introduction {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .middle-wrapper h2{
+    font-size: 36px;
+  }
+
+  .introduction span{
+    color: rgb(200, 58, 33);
+  }
+
+  .my-picture img {
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+  }
+
+  .command-area {
+    padding-top: 100px;
+  }
+
+  .contents h1 {
+    color: rgb(127, 218, 90);
+    font-size: 100px;
+  }
+
+  footer {
+    border-top: 1px solid grey;
+  }
+
+  footer p{
+    text-align: right;
+    color: #aaa;
+    opacity: 0.7;
+    font-size: 20px;
+  }
+
+  .input {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .submit {
+    width: 50px;
+    height: 50px;
+  }
+
+  .command-area p{
+    font-size: 40px;
+  }
+
+}

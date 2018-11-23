@@ -1,0 +1,131 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.questions-area {
+  // border: 1px solid red;
+  text-align: left;
+  margin: 30px auto;
+  width: 600px;
+  // font-weight: bold;
+}
+
+.question {
+  // border: 1px solid white;
+  height: 100px;
+  line-height: 50px;
+}
+
+.index-middle-wrapper {
+  color: #aaa;
+  text-align: center;
+}
+
+.show-middle-wrapper {
+  color: #aaa;
+  text-align: center;
+}
+
+.question-content {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.inputArea {
+  margin: 20px 0;
+}
+
+.return {
+  margin: 30px 0;
+}
+
+#flash {
+  color: red;
+}
+
+.flag-middle-wrapper {
+  color: #aaa;
+  text-align: center;
+}
+
+@media (max-width: 1000px){
+
+  .show-middle-wrapper {
+    text-align: center;
+  }
+
+  .index-middle-wrapper h1 {
+    margin: 100px auto;
+    text-align: center;
+    font-size: 70px;
+    color: #aaa;
+  }
+
+  .index-middle-wrapper li {
+    color: #aaa;
+    font-size: 40px;
+    padding-top: 20px;
+    text-decoration: none;
+  }
+
+  .show-middle-wrapper h1{
+    color: #aaa;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .question-content {
+    color: #aaa;
+    margin: 20px auto;
+    text-align: center;
+    // border: 1px solid red;
+    width: 800px;
+    font-size: 36px;
+  }
+
+  .inputArea {
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+
+  .show-middle-wrapper input{
+    height: 30px;
+    width: 200px;
+  }
+
+  #submit {
+    text-align: center;
+    width: 50px;
+  }
+
+  .return {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .flag-middle-wrapper {
+    text-align: center;
+  }
+
+  .flag-middle-wrapper h1 {
+    color: #aaa;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .flag-middle-wrapper h2 {
+    color: #aaa;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+  }
+
+  #flash {
+    color: red;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+}
